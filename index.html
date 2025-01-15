@@ -4,102 +4,301 @@
 <head>
     <meta charset="UTF-8">
     <title>The Fascinating World of Octopuses</title>
+
+    <style>
+        body{
+            background-color: lightblue;
+        }
+
+        #header{
+            width: 100;
+            border: 3px solid rgb(0, 97, 153);
+            background:  rgb(0, 114, 156);
+            padding: 5px;
+            margin: 10px auto;
+            text-align: center;
+            border-radius: 20px;
+            color: white
+            
+        }
+
+        #main-content{
+            width: 100;
+            margin: 10px auto;
+            padding: 10px;
+            border: 0px solid rgb(0, 97, 153);
+            border-radius: 10px;
+            background-color: white;
+        }
+
+        #smallHeaders{
+            color: rgb(0, 97, 153);
+        }
+
+        #amazing-facts ul li {
+            color: rgb(0, 97, 153);
+            margin-bottom: 10px; 
+            color: black; 
+        }
+
+        #amazing-facts ul li::marker{
+            color:rgb(0, 97, 153) ;
+        }
+        #comparission ol li {
+            color: rgb(0, 97, 153);
+            margin-bottom: 10px; 
+            color: rgb(0, 0, 0); 
+
+        }
+
+        #amazing-facts ul li::marker{
+            color:rgb(0, 97, 153) ;
+            
+        }
+
+        #a{
+            color: rgb(0, 97, 153);
+            text-decoration: none;
+        }
+    #quiz-form-container form input[type="submit"] {
+    padding: 5px 15px;
+    background-color: rgb(0, 97, 153);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    }
+
+        
+    .important{
+            font-weight: bold;
+            background-color: rgb(144, 224, 239);
+            color: rgb(0, 105, 148);
+        }
+
+        #quiz-section {
+    display: flex; /* Use Flexbox for layout */
+    align-items: flex-start; /* Align items to the top */
+    justify-content: flex-start; /* Align content to the left */
+    border: 1px solid rgb(0, 97, 153);
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(144, 224, 239);
+    margin: 20px auto;
+    gap: 30px; /* Space between image and content */
+}
+
+#quiz-section img {
+    width: 50px; /* Image size */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Rounded corners */
+}
+
+#quiz-header {
+    text-align: left; /* Align header to the left */
+    margin-bottom: 20px; /* Add space below the header */
+}
+
+#quiz-form-container {
+    text-align: right; /* Align the form to the right */
+}
+
+#quiz-form-container form input[type="text"] {
+    width: 200px; /* Set input box width */
+    margin-bottom: 10px; /* Add spacing between inputs */
+    border: 2px solid rgb(0, 97, 153);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#quiz-form-container form input[type="submit"] {
+    padding: 5px 15px;
+    background-color: rgb(0, 97, 153);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+    #smallerHeaders {
+        text-align: left !important; /* Align the header to the left */
+    }
+
+    #species-data {
+        width: 100%; /* Full width */
+        border-collapse: collapse; /* Remove gaps between cells */
+        font-family: Arial, sans-serif;
+        margin: 0 auto;
+        border: 2px solid #000000; /* Border around the table */
+    }
+
+    #species-data thead {
+        
+        color: white;
+        background-color: #888383; /* Grey background for header */
+    }
+
+    #species-data thead th {
+        border: 1px solid #000000;
+        padding: 10px;
+        text-align: left;
+        border: px solid #007399; /* Borders for header cells */
+    }
+
+    #species-data tbody tr {
+        background-color: lightblue; /* Default light grey for all rows */
+        
+    }
+
+    #species-data tbody tr:nth-child(2) {
+        
+        background-color: rgb(255, 255, 255) !important; /* Force white background for the third row */
+    }
+
+    #species-data tbody td {
+        padding: 10px;
+        border: 1px solid #007399; /* Borders for body cells */
+        text-align: left;
+    }
+    #header-bar {
+        width: 10%;
+        height: 5px;
+        background-color: rgb(0, 97, 153);
+        margin:10px;
+        border-radius: 3px;
+    }
+
+    #footer {
+        width: 100;
+        background-color: rgb(0, 97, 153);
+        color: white;
+        text-align: center;
+        padding: 10px;
+        border-radius: 10px;
+        margin-top: 10px;
+    }
+
+
+
+
+    </style>
+
+
+    
 </head>
 
 <body>
+  
     <!-- Header Section -->
+
     <div id="header">
         <h1>The Fascinating World of Octopuses</h1>
-        <p>Welcome to this intriguing corner of the internet!</p>
+        <p style="text-align: left;"><em> Welcome to this intriguing corner of the internet!</em></p>
     </div>
 
     <!-- Main Content -->
     <div id="main-content">
 
         <!-- Introduction -->
-        <h2>Introduction</h2>
+        <h2 id="smallHeaders">INTRODUCTION</h2>
+        <div id="header-bar"></div>
+        
         <p>
             Octopuses are among the most fascinating creatures in the ocean.
             They are known for their intelligence and remarkable adaptability.
         </p>
 
         <!-- Amazing Facts -->
-        <h3>Amazing Facts</h3>
+        <h3 id="smallHeaders">AMAZING FACTS</h3>
         <!-- Unordered list -->
-        <ul>
-            <li>They have three hearts.</li>
-            <li>They can change color.</li>
-            <li>They are masters of camouflage.</li>
-        </ul>
-
+        <div id="amazing-facts">
+            <ul>
+                <li>They have three hearts.</li>
+                <li>They can change color.</li>
+                <li>They are masters of camouflage.</li>
+            </ul> 
+        </div>
         <!-- Anatomy -->
-        <h4>Anatomy</h4>
+        <h4 id="smallHeaders">Anatomy</h4>
         <p>
             An octopus's anatomy is as unique as it is fascinating.
             The <span class="important">mantle</span>, for example, helps in respiration and jet propulsion.
         </p>
 
         <!-- Comparison with other Cephalopods -->
-        <h5>Comparison with Other Cephalopods</h5>
+        <h5 id="smallHeaders">Comparison with Other Cephalopods</h5>
         <!-- Ordered list -->
+        <div id="comparission">
         <ol>
             <li>Squid</li>
             <li>Cuttlefish</li>
             <li>Nautilus</li>
         </ol>
+        </div>
 
         <!-- External Resources -->
-        <h6>External Resources</h6>
-        <p>
+        <h6 id="smallHeaders">External Resources</h6>
+        <p >
             For more information, visit these websites:
-            <a href="https://www.oceana.org/" target="_blank">Oceana</a> |
-            <a href="https://www.nationalgeographic.com/" target="_blank">National Geographic</a>
+            <a id="a" href="https://www.oceana.org/" target="_blank">Oceana</a> |
+            <a id="a" href="https://www.nationalgeographic.com/" target="_blank">National Geographic</a>
         </p>
 
         <!-- Fun Experiment: Octopus Quiz -->
         <div id="quiz-section">
-
             <!-- Image -->
-            <img src="octopus-image.png" alt="Image of an octopus" width="100">
-
-            <h2>Octopus Quiz</h2>
-            <form action="/submit-quiz" method="POST">
-                <!-- Question 1 -->
-                <label for="question1">How many hearts does an octopus have?</label>
-                <input type="text" id="question1" name="question1"><br>
-
-                <!-- Question 2 -->
-                <label for="question2">Can octopuses change color? (Yes/No)</label>
-                <input type="text" id="question2" name="question2"><br>
-
-                <input type="submit" value="Submit Quiz">
-            </form>
+            <img src="octopus-image.png" alt="Image of an octopus">
+            
+            <!-- Quiz Content -->
+            <div>
+                <div id="quiz-header">
+                    <h2>Octopus Quiz</h2>
+                </div>
+                <div id="quiz-form-container">
+                    <form action="/submit-quiz" method="POST">
+                        <!-- Question 1 -->
+                        <label for="question1">How many hearts does an octopus have?</label>
+                        <input type="text" id="question1" name="question1"><br>
+        
+                        <!-- Question 2 -->
+                        <label for="question2">Can octopuses change color? (Yes/No)</label>
+                        <input type="text" id="question2" name="question2"><br>
+        
+                        <input type="submit" value="Submit Quiz">
+                    </form>
+                </div>
+            </div>
         </div>
+        
+        
+        
 
     </div> <!-- End of main-content -->
-
-    <!-- Table -->
-    <div id="species-table">
         <h2>Common Octopus Species</h2>
-        <table border="1">
-            <tr>
-                <th>Species</th>
-                <th>Location</th>
-                <th>Size</th>
-            </tr>
-            <tr>
-                <td>Common Octopus</td>
-                <td>Worldwide</td>
-                <td>12-36 inches</td>
-            </tr>
-            <tr>
-                <td>Giant Pacific Octopus</td>
-                <td>North Pacific</td>
-                <td>Up to 16 feet</td>
-            </tr>
-        </table>
-    </div>
+        <div id="header-bar"></div>
 
+        <table id="species-data">
+            <thead>
+                <tr>
+                    <th>Species</th>
+                    <th>Location</th>
+                    <th>Size</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Common Octopus</td>
+                    <td>Worldwide</td>
+                    <td>12-36 inches</td>
+                </tr>
+                <tr>
+                    <td>Giant Pacific Octopus</td>
+                    <td>North Pacific</td>
+                    <td>Up to 16 feet</td>
+                </tr>
+            </tbody>
+        </table>
+    
     <!-- Footer -->
     <div id="footer">
         <p>
@@ -108,7 +307,7 @@
             Fun Fact: The plural of "Octopus" can be both "Octopuses" &amp; "Octopi" &lt;3
         </p>
     </div>
-
+    
 </body>
 
 </html>
